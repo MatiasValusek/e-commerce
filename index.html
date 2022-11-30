@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+
+  <script defer src= "/objets-cards.js"></script>
+  <script defer src="/cards.js"></script>
+  <script defer src="https://kit.fontawesome.com/2e95d1ae7c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGACION -->
+  
+  <div class="nav-container">
+    <div class="logo">
+      <strong>Merca-dito!</strong>
+    </div>
+
+    <input type="text" class="seeker">
+
+    <div class="icons">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-user"></i>
+      <div class="carritoNumero">
+        <i class="fa-solid fa-cart-shopping" id="modal-open"></i><span id="contadorCarrito">0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTENEDOR DE CARTAS -->
+  
+  <div class="cards-container" id="cards-container">
+    
+  </div>
+
+  <!-- MODAL -->
+  
+  <div class="modal-container" id="modal-container">
+    
+    <div class="modal-carrito">
+      
+      <div class="modalSuperior">
+        <h2>Carrito</h2>
+        <i class="fa-solid fa-xmark" id="modal-close"></i>
+      </div>
+     
+      <div class="carrito-contenedor" id="carrito-contenedor">
+        
+        <!-- <div class="productoEnCarrito">
+          <img src="/imagenes/mouse.jpg" class="img-modal" >
+          <p>buzo 1</p>
+          <div class="productoEnCarritoFin">
+           <p>Precio: $2000</p>
+           <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>   -->
+
+      </div>
+
+      <div class="modalInferior">
+        <p class="precio-contenedor">Precio total: $<span id="precioTotal">0</span></p>
+        <button id="vaciarCarrito" class="boton-eliminar">Vaciar carrito</button>
+      </div>
+    
+    </div>
+
+  </div>
+      
+</body>
+</html>
